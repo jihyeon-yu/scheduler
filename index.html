@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>유지현 스케줄러</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link href='fullcalendar/packages/core/main.css' rel='stylesheet' />
+    <link href='fullcalendar/packages/daygrid/main.css' rel='stylesheet' />
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src='fullcalendar/packages/core/main.js'></script>
+    <script src='fullcalendar/packages/interaction/main.js'></script>
+    <script src='fullcalendar/packages/daygrid/main.js'></script>
+
+	<style>
+	
+	</style>
+</head>
+<body>
+	<div class="container mt-2">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="alert alert-primary mb-3" role="alert">
+				  <h1 class="display-6 text-center">SCHEDULE</h1>
+				</div>
+				<h6>학사일정 <a href="#"><i class="far fa-edit"></i></a> <a href="#"><i class="fas fa-plus"></i></a></h6>
+				<table class="table table-sm table-bordered">
+					<tr>
+						<td>1.</td>
+					</tr>
+					<tr>
+						<td>2.</td>
+					</tr>
+					<tr>
+						<td>3.</td>
+					</tr>
+					<tr>
+						<td>4.</td>
+					</tr>
+					<tr>
+						<td>5.</td>
+					</tr>
+				</table>
+				<div id='calendar' class="mt-5 mb-3"></div>
+				<div class="border mt-3 mb-5 p-4">
+					<div class="float-none">
+						<div class="float-left"> attendance </div>
+						<div class="float-right">
+							<a href="#"><i class="fas fa-plus"></i></a>
+							<a href="#"><i class="far fa-caret-square-left"></i></a>
+							<a href="#"><i class="far fa-caret-square-right"></i></a>
+						</div>
+					</div>
+					<div class="float-none mt-3">
+						<h4 class="text-center" style="font-family: 'Gowun Batang', serif;">프로그래밍 프로젝트</h4>
+						<table class="table table-bordered table-sm text-center">
+							<tr>
+								<td>날짜</td>
+								<td>1st</td>
+								<td>2nd</td>
+								<td>3rd</td>
+								<td>4th</td>
+								<td>5th</td>
+								<td>6th</td>
+								<td>7th</td>
+								<td>8th</td>
+								<td>9th</td>
+								<td>10th</td>
+							</tr>
+							<tr>
+								<td>출석</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>과제</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>날짜</td>
+								<td>11h</td>
+								<td>12h</td>
+								<td>13h</td>
+								<td>14h</td>
+								<td>15h</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>출석</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>과제</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="border p-1" style="height: 340px;">
+					<h5 style="font-family: 'Gowun Batang', serif;">수업시간표</h5>
+				</div>
+				<h6 class="mt-4">Todo List</h6>
+				<div class="border p-2">
+					<div class="text-right"><a href="#"><i class="far fa-edit"></i></a> <a href="#"><i class="fas fa-plus"></i></a></div>
+					<div class="border-bottom p-2"><i class="far fa-check-square mb-2"></i></div>
+					<div class="border-bottom p-2"><i class="far fa-check-square mb-2"></i></div>
+					<div class="border-bottom p-2"><i class="far fa-check-square mb-2"></i></div>
+					<div class="border-bottom p-2"><i class="far fa-check-square mb-2"></i></div>
+					<div class="border-bottom p-2"><i class="far fa-check-square mb-2"></i></div>
+					<div class="border-bottom p-2"><i class="far fa-check-square mb-2"></i></div>
+					<div class="border-bottom p-2"><i class="far fa-check-square mb-2"></i></div>
+					<div class="border-bottom p-2"><i class="far fa-check-square mb-2"></i></div>
+					<div class="border-bottom p-2"><i class="far fa-check-square mb-2"></i></div>
+					<div class="border-bottom p-2"><i class="far fa-check-square mb-2"></i></div>
+					<div class="border-bottom p-2"><i class="far fa-check-square mb-2"></i></div>
+					<div class="border-bottom p-2"><i class="far fa-check-square mb-2"></i></div>
+					<div class="border-bottom p-2"><i class="far fa-check-square mb-2"></i></div>
+				</div>
+
+				
+		
+				<div class="border p-1 mt-4" style="height: 140px;">
+					<h6 style="font-family: 'Gowun Batang', serif;">사이트 바로가기</h5>
+						<a href="https://www.chungbuk.ac.kr/site/www/main.do" target=_blank><img src=https://resizeimage.net/mypic/4TctwEITa8UQ4Taa/vrFqq/cbnu.png> </a>
+						<a href="https://naver.com/" target=_blank><img src=https://resizeimage.net/mypic/WiTQXhxwn42AJtFt/lONzY/naver.png> </a>
+						<a href="https://en.dict.naver.com/#/main" target=_blank><img src=https://resizeimage.net/mypic/g7ElQf1UpgieiTdk/k7ur2/dictionary.jpg> </a>
+						<a href="https://ecampus.chungbuk.ac.kr/" target=_blank><img src=https://resizeimage.net/mypic/60G9as6sB4bcSJIr/WOCEK/elearning.png> </a>
+				</div>
+				<div class="border p-1 mt-2" style="height: 177px;">
+					<h6 style="font-family: 'Gowun Batang', serif;">Memo</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+   <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      plugins: [ 'interaction', 'dayGrid' ],
+      defaultDate: '2021-10-25',
+      editable: true,
+      eventLimit: true, // allow "more" link when too many events
+      events: [
+        {
+          title: 'All Day Event',
+          start: '2020-02-01'
+        },
+        {
+          title: 'Long Event',
+          start: '2020-02-07',
+          end: '2020-02-10'
+        },
+        {
+          groupId: 999,
+          title: 'Repeating Event',
+          start: '2020-02-09T16:00:00'
+        },
+        {
+          groupId: 999,
+          title: 'Repeating Event',
+          start: '2020-02-16T16:00:00'
+        },
+        {
+          title: 'Conference',
+          start: '2020-02-11',
+          end: '2020-02-13'
+        },
+        {
+          title: 'Meeting',
+          start: '2020-02-12T10:30:00',
+          end: '2020-02-12T12:30:00'
+        },
+        {
+          title: 'Lunch',
+          start: '2020-02-12T12:00:00'
+        },
+        {
+          title: 'Meeting',
+          start: '2020-02-12T14:30:00'
+        },
+        {
+          title: 'Happy Hour',
+          start: '2020-02-12T17:30:00'
+        },
+        {
+          title: 'Dinner',
+          start: '2020-02-12T20:00:00'
+        },
+        {
+          title: 'Birthday Party',
+          start: '2020-02-13T07:00:00'
+        },
+        {
+          title: 'Click for Google',
+          url: 'http://google.com/',
+          start: '2020-02-28'
+        }
+      ]
+    });
+
+    calendar.render();
+  });
+
+    </script>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
